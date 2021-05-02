@@ -7,14 +7,15 @@ The requirements for the project are
 Explain feature engineering Trying cross validation and Hyperparameters tuning will be a plus. Try at least 2 models and prepare the report with the performance comparison and reasoning why one is better than another.
 
 Our goals for this notebook:
+
 <b>Part 1:</b> Exploratory Data Analysis
 
 Exploratory Data Analysis: understand the data by EDA and derive simple models with Pandas as baseline
 
-Part 2: Data wrangling and feature engineering
+<b>Part 2:</b> Data wrangling and feature engineering
 
 Data wrangling: fill nan, convert categorical to numerical, create train and test data for ML algorithms
 
-Part 3: Trying cross validation and Hyperparameters
+<b>Part 3:</b> Trying cross validation and Hyperparameters
 
-Part 4: Comparison of Model results use metrics like confusion_matrix, classification_report, accuracy_score and implement k fold cross validation for comparison of test score
+<b>Part 4:</b> Comparison of Model results use metrics like confusion_matrix, classification_report, accuracy_score and implement k fold cross validation for comparison of test score
