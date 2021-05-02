@@ -8,14 +8,14 @@ Explain feature engineering Trying cross validation and Hyperparameters tuning w
 
 Our goals for this notebook:
 
-<b>Part 1:</b> Exploratory Data Analysis
+<b>Part 1: Exploratory Data Analysis </b>
 
 Exploratory Data Analysis: understand the data by EDA and derive simple models with Pandas as baseline
 
-<b>Part 2:</b> Data wrangling and feature engineering
+<b>Part 2: Data wrangling and feature engineering</b>
 
 Data wrangling: fill nan, convert categorical to numerical, create train and test data for ML algorithms
 
-<b>Part 3:</b> Trying cross validation and Hyperparameters
+<b>Part 3: Trying cross validation and Hyperparameters</b>
 
-<b>Part 4:</b> Comparison of Model results use metrics like confusion_matrix, classification_report, accuracy_score and implement k fold cross validation for comparison of test score
+<b>Part 4: Comparison of Model results use metrics like confusion_matrix, classification_report, accuracy_score and implement k fold cross validation for comparison of test score</b>
