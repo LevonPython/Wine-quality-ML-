@@ -7,7 +7,7 @@ The requirements for the project are
 Explain feature engineering Trying cross validation and Hyperparameters tuning will be a plus. Try at least 2 models and prepare the report with the performance comparison and reasoning why one is better than another.
 
 Our goals for this notebook:
-Part 1: Exploratory Data Analysis
+<b>Part 1:</b> Exploratory Data Analysis
 
 Exploratory Data Analysis: understand the data by EDA and derive simple models with Pandas as baseline
 
