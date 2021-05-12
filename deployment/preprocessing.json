@@ -1,0 +1,24 @@
+{
+    "features": {
+        "census_median_yearbuilt": {
+            "active": true,
+            "static": true
+        },
+        "year_old": {
+            "active": true,
+            "static": false,
+            "dtype": "float"
+        },
+        "mapped_hvacheatingdetail": {
+            "active": true,
+            "static": true,
+            "map": {
+                "108": "central",
+                "236": "central",
+                "110": "steam",
+                "113": "electrical"
+            },
+            "dtype": "category"
+        }
+    }
+}
