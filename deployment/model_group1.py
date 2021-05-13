@@ -76,6 +76,7 @@ class Model:
         return b, m
 
     def predict(self, X: np.ndarray) -> np.ndarray:
+        print("Predict started to execute")
         X = np.hstack([np.ones((X.shape[0], 1)), X])
         y_hat = X @ self.params
         return y_hat
@@ -104,23 +105,28 @@ class Model:
     def save(self):
         pass
 
-    def load(self):
-        pass
+    def load(self, pk_file):
+        print("Load executed")
+        with open(pk_file, 'rb') as f:
+            print(f"f: {f}")
+            res = pickle.load(f)
+            return res
 
 
 if __name__ == '__main__':
-    np.random.seed(1)
-    X = np.arange(50)[:, np.newaxis]
-    noise = np.random.randint(5, size=(50, 1))
-    # to model
-    y = 3 + 2 * X + noise
-    ols_model = Model()
-    ols_model.fit(X, y)
-    print(X)
-    # modeled
-    print(f"y = {ols_model.params[0][0]} + {ols_model.params[1][0]} * x")
-    # X_new = np.arange(60, 61)[:, np.newaxis]
-    # X_new = np.array([[60]])
-    y_hat = ols_model.predict(X)
-    ols_model.plot_predictions(X, y, y_hat)
-    pickle.dump(ols_model, open("model.pkl", "wb"))
+    pass
+    # np.random.seed(1)
+    # X = np.arange(50)[:, np.newaxis]
+    # noise = np.random.randint(5, size=(50, 1))
+    # # to model
+    # y = 3 + 2 * X + noise
+    # ols_model = Model()
+    # ols_model.fit(X, y)
+    # print(X)
+    # # modeled
+    # print(f"y = {ols_model.params[0][0]} + {ols_model.params[1][0]} * x")
+    # # X_new = np.arange(60, 61)[:, np.newaxis]
+    # # X_new = np.array([[60]])
+    # y_hat = ols_model.predict(X)
+    # ols_model.plot_predictions(X, y, y_hat)
+    # pickle.dump(ols_model, open("model.pkl", "wb"))
