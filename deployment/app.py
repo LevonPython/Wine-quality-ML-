@@ -4,7 +4,7 @@ from flask import Flask
 from flask import request, jsonify
 import json
 import numpy as np
-from ensemble_methods import RandomForest
+from decision_tree import RandomForest
 import requests
 
 app = Flask(__name__)
