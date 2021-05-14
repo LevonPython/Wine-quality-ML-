@@ -7,6 +7,7 @@ from sklearn import metrics
 import pickle
 import json
 from decision_tree import RandomForest
+# from ensemble_methods import RandomForest
 
 app = Flask(__name__)
 
@@ -33,18 +34,18 @@ def score(data: list):
     # print(f"type result: {type(result)}")
 
     # calculate prediction
-    # predict_list = []
-    # for i in X:
-    #     predict_list.append(model.predict([i]))
-    # predicted_np = np.array([i[0] for i in predict_list])
-    # print(f"predicted: {predicted_np}")
-
-    # calculate prediction with manually written model
     predict_list = []
     for i in X:
-        predict_list.append(RandomForest.predict("", [i]))
+        predict_list.append(model.predict([i]))
     predicted_np = np.array([i[0] for i in predict_list])
-    print(f"RF predicted: {predicted_np}")
+    print(f"predicted: {predicted_np}")
+
+    # # calculate prediction with manually written model
+    # predict_list = []
+    # for i in X:
+    #     predict_list.append(RandomForest.predict("", [i]))
+    # predicted_np = np.array([i[0] for i in predict_list])
+    # print(f"RF predicted: {predicted_np}")
 
     # calculate accuracy
     accuracy_list = []

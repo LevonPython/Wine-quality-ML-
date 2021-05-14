@@ -29,17 +29,20 @@ class RandomForest:
 
     def predict(self, X):
         predictions = []
+        print("start")
+        print(f"self.trees: {self.trees}")
         for tree in self.trees:
             predictions.append(tree.predict(X))
+        print("middle")
         predictions = np.array(predictions)
 
-        final_predictions = []
+        # final_predictions = []
         mode, counts = stats.mode(predictions)
         return mode.reshape(-1)
 
     def score(self, X, y):
         y_pred = self.predict(X)
-        return sum(y == y_pred) / len(y_pred)
+        return np.sum(y == y_pred) / len(y_pred)
 
     def load(self, pk_file):
         print(f"Load started: {pk_file}")
