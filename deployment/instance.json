@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+        "total_acidity": 1.38142947,
+        "chlorides": 0.41461297,
+        "pH": -1.43424476,
+        "sulphates": 0.01173092,
+        "alcohol": 1.29452384,
+        "quality": 1
+            },
+                {
+        "total_acidity": 0.98834726,
+        "chlorides": 0.09584359,
+        "pH": -0.59032952,
+        "sulphates": -0.10625867,
+        "alcohol": -0.39620124,
+        "quality": 0
+            },
+        {
+        "total_acidity": 0.62256242,
+        "chlorides": -0.15917191,
+        "pH": -1.04474542,
+        "sulphates": 1.54559554,
+        "alcohol": 1.20059467,
+        "quality": 1
+            }
+    ],
+    "data2": [
+        {
+        "type": 0.0,
+        "fixed acidity": 7.5,
+        "volatile acidity": 0.33,
+        "citric acid": 0.39,
+        "residual sugar": 12.4,
+        "free sulfur dioxide": 29.0,
+        "total sulfur dioxide": 119.0,
+        "density": 0.9974
+        }
+    ]
+
+}

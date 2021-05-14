@@ -6,6 +6,7 @@ import pickle
 
 
 class RandomForest:
+
     def __init__(self,
                  n_trees: int,
                  max_depth: int = 3,
@@ -24,7 +25,6 @@ class RandomForest:
             clf = DecisionTreeClassifier(max_depth=self.max_depth,
                                          min_samples_split=self.min_samples_split).fit(X_new, y_new)
             self.trees.append(clf)
-
         return self
 
     def predict(self, X):
@@ -42,9 +42,13 @@ class RandomForest:
         return sum(y == y_pred) / len(y_pred)
 
     def load(self, pk_file):
-        print("Load executed")
+        print(f"Load started: {pk_file}")
         with open(pk_file, 'rb') as f:
             print(f"f: {f}")
-            res = pickle.load(f)
-            print(f"res {res}")
-            return res
+            loaded_model = pickle.load(f)
+            print(f"loaded_model {loaded_model}")
+            return loaded_model
+
+#
+# if __name__ == '__main__':
+#     model = RandomForest()
