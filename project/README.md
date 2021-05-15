@@ -86,7 +86,15 @@ In this py file is implemented Argparse functionality to help user give necessar
 ```shell script
 python deployment/client.py instance.json
 ```
-Step 3: You can see the JSON file content and prediction result on the local host (host='127.0.0.1', port='5000')
+Step 3: You can see Web-server side on the local host (host='127.0.0.1', port='5000')
+to see main page
+```shell script
+http://localhost:5000/main
+```
+to see raw data
+```shell script
+http://localhost:5000/raw_data
+```
 to see input json data
 ```shell script
 http://localhost:5000/predict
@@ -94,4 +102,8 @@ http://localhost:5000/predict
 to see predicted data
 ```shell script
 http://localhost:5000/result
+```
+to read about project
+```shell script
+http://localhost:5000/about
 ```
