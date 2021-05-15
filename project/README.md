@@ -70,8 +70,19 @@ For example:
 python3 scripts/score.py --arg-1 45 --arg-2 true ...
 ```
 
-## Tests 
+## Tests / Deployement (Flask API)
 
 TODO: 
 
-Please describe technical steps for running tests.
+Technical steps description for running tests.
+
+Step 1: Please run deployment/app.py script for raising local flask API (by default debug=True, host='127.0.0.1', port='5000').
+This API includes already saved (deployment/rand_forest_model.pkl) Best model's (Random Forest) object with necessary weights for prediction.
+```shell script
+python deployment/app.py
+```
+Step 2: Now please run the deployment/client.py to implement POST method to already raised API. 
+In this py file is implemented Argparse functionality to help user give necessary inputs (TEST input in JSON file extension)
+```shell script
+python deployment/client.py instance.json
+```
