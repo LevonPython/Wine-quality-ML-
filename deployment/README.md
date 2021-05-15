@@ -1,5 +1,5 @@
-# ds-template-structure
-Template project structure for all data science projects.
+# Deployement-structure
+Wine quality project.
 
 ## Business Background
 
