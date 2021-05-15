@@ -74,9 +74,9 @@ python3 scripts/score.py --arg-1 45 --arg-2 true ...
 
 TODO: 
 
-Technical steps description for running tests.
+Technical steps description for running API and implement tests.
 
-Step 1: Please run deployment/app.py script for raising local flask API (by default debug=True, host='127.0.0.1', port='5000').
+Step 1: Please run deployment/app.py file for raising local flask API (by default debug=True, host='127.0.0.1', port='5000').
 This API includes already saved (deployment/rand_forest_model.pkl) Best model's (Random Forest) object with necessary weights for prediction.
 ```shell script
 python deployment/app.py
