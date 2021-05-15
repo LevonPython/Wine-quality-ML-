@@ -1,5 +1,5 @@
 # Deployement-structure
-Wine quality project.
+Project: Predicting Wine Quality using Wine Quality Dataset.
 
 ## Business Background
 
