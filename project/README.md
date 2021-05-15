@@ -1,5 +1,5 @@
-# ds-template-structure
-Template project structure for all data science projects.
+# Project structure
+Project: Predicting Wine Quality using Wine Quality Dataset.
 
 ## Business Background
 
