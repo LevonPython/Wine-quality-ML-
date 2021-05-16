@@ -28,7 +28,7 @@ Please provide link to confluence page or describe a project in few sentences.
 
 Project development structure
 http://localhost:5000/
-├── /main
+├── /main </br>
 │── /raw_data
 ├── /input
 │── /wranglered_input
