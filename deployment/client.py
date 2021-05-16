@@ -3,7 +3,8 @@ import json
 import argparse
 import os.path
 import sys
-
+import pandas as pd
+from data_wrangler import DataWrangler
 
 def json_parser(url):
 
@@ -39,7 +40,20 @@ def json_parser(url):
     with open(json_file_path, 'r') as j:
         contents = json.loads(j.read())
         print(contents)
-        r = requests.post(url, json=contents)
+        data = contents['data']
+        df = pd.DataFrame.from_dict(data, orient='columns')
+        print("---Raw data------")
+        print(df.head(20))
+        df.to_csv('data/instance_raw.csv')
+        df = DataWrangler.lst_of_dataframes(DataWrangler.oversampling_data(DataWrangler.data_correcting(df)))
+        print("---Wranglered data------")
+        print(df.head(20))
+        df.to_csv('data/instance_wranglered.csv')
+
+        # convert wranglered data to json format and POST to API
+        json_file = json.loads(df.to_json(orient="split"))
+        print(json_file)
+        r = requests.post(url, json=json_file)
         print(r.text)
 
 if __name__ == "__main__":
