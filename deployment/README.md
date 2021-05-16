@@ -27,13 +27,13 @@ Please provide link to confluence page or describe a project in few sentences.
 
 
 Project development structure
-http://localhost:5000/
+http://localhost:5000/</br>
 ├── /main </br>
-│── /raw_data
-├── /input
-│── /wranglered_input
-├── /result
-│── /about
+│── /raw_data</br>
+├── /input</br>
+│── /wranglered_input</br>
+├── /result</br>
+│── /about</br>
 
 TODO: 
 Technical steps description for running API and implement tests.
