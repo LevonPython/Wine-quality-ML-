@@ -27,3 +27,5 @@ Data wrangling: fill nan, convert categorical to numerical, create train and tes
 <b>Part 3: Trying cross validation and Hyperparameters</b>
 
 <b>Part 4: Comparison of Model results use metrics like confusion_matrix, classification_report, accuracy_score and implement k fold cross validation for comparison of test score</b>
+
+<b>Part 5: Create a Flask API with opportunity GET/POST methods to post test data input and calculate prediction and accuracy. Raise Web application for more friendly use</b>
