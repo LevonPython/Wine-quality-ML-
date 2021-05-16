@@ -39,12 +39,15 @@ Step 1: Please run deployment/app.py file for raising local flask API (by defaul
 This API includes already saved (deployment/rand_forest_model.pkl) Best model's (Random Forest) object with necessary weights for prediction.</br>
 ```shell script
 python deployment/app.py
-```</br>
+```
+</br>
 Step 2: Now please run the deployment/client.py to implement POST method to already raised API. </br>
 In this py file is implemented Argparse functionality to help user give necessary inputs (TEST input in JSON file extension)</br>
+
 ```shell script
 python deployment/client.py data/instance_raw.json
-```</br>
+```
+</br>
 Step 3: You can see Web-server side on the local host (host='127.0.0.1', port='5000')</br>
 to see main page </br>
 ```shell script
@@ -69,11 +72,13 @@ http://localhost:5000/raw_data
 to see input csv data</br>
 ```shell script
 http://localhost:5000/input
-```</br>
+```
+</br>
 to see wranglered data</br>
 ```shell script
 http://localhost:5000/wranglered_input
-```</br>
+```
+</br>
 
 .. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Wranglered%20data.PNG
    :align: left
@@ -83,7 +88,8 @@ http://localhost:5000/wranglered_input
 to see predicted results</br>
 ```shell script
 http://localhost:5000/result
-```</br>
+```
+</br>
 
 .. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Result%20page.PNG
    :align: left
@@ -93,7 +99,8 @@ http://localhost:5000/result
 to read about project</br>
 ```shell script
 http://localhost:5000/about
-```</br>
+```
+</br>
 
 .. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/About.PNG
    :align: left
@@ -104,7 +111,8 @@ http://localhost:5000/about
 to read  first page</br>
 ```shell script
 http://localhost:5000/
-```</br>
+```
+</br>
 
 .. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/First_page.PNG
    :align: left
