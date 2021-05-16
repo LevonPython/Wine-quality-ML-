@@ -35,20 +35,20 @@ TODO:
 Technical steps description for running API and implement tests.
 
 
-Step 1: Please run deployment/app.py file for raising local flask API (by default debug=True, host='127.0.0.1', port='5000').
-This API includes already saved (deployment/rand_forest_model.pkl) Best model's (Random Forest) object with necessary weights for prediction.
+Step 1: Please run deployment/app.py file for raising local flask API (by default debug=True, host='127.0.0.1', port='5000').</br>
+This API includes already saved (deployment/rand_forest_model.pkl) Best model's (Random Forest) object with necessary weights for prediction.</br>
 ```shell script
 python deployment/app.py
-```
-Step 2: Now please run the deployment/client.py to implement POST method to already raised API. 
-In this py file is implemented Argparse functionality to help user give necessary inputs (TEST input in JSON file extension)
+```</br>
+Step 2: Now please run the deployment/client.py to implement POST method to already raised API. </br>
+In this py file is implemented Argparse functionality to help user give necessary inputs (TEST input in JSON file extension)</br>
 ```shell script
 python deployment/client.py data/instance_raw.json
-```
-Step 3: You can see Web-server side on the local host (host='127.0.0.1', port='5000')
-to see main page
+```</br>
+Step 3: You can see Web-server side on the local host (host='127.0.0.1', port='5000')</br>
+to see main page </br>
 ```shell script
-http://localhost:5000/main
+http://localhost:5000/main</br>
 ```
 
 .. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/main_page.PNG
@@ -56,44 +56,44 @@ http://localhost:5000/main
    :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/main_page.PNG
    :alt: Main
    
-to see raw data
+to see raw data</br>
 ```shell script
 http://localhost:5000/raw_data
-```
+```</br>
 
 .. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Raw%20data.PNG
    :align: left
    :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Raw%20data.PNG
    :alt: Raw data
    
-to see input csv data
+to see input csv data</br>
 ```shell script
 http://localhost:5000/input
-```
-to see wranglered data
+```</br>
+to see wranglered data</br>
 ```shell script
 http://localhost:5000/wranglered_input
-```
+```</br>
 
 .. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Wranglered%20data.PNG
    :align: left
    :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Wranglered%20data.PNG
    :alt: Wramglered
    
-to see predicted results
+to see predicted results</br>
 ```shell script
 http://localhost:5000/result
-```
+```</br>
 
 .. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Result%20page.PNG
    :align: left
    :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Result%20page.PNG
    :alt: Result
    
-to read about project
+to read about project</br>
 ```shell script
 http://localhost:5000/about
-```
+```</br>
 
 .. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/About.PNG
    :align: left
@@ -101,10 +101,10 @@ http://localhost:5000/about
    :alt: About
    
    
-to read  first page
+to read  first page</br>
 ```shell script
 http://localhost:5000/
-```
+```</br>
 
 .. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/First_page.PNG
    :align: left
