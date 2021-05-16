@@ -50,19 +50,52 @@ to see main page
 ```shell script
 http://localhost:5000/main
 ```
+.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/main_page.PNG
+   :align: left
+   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/main_page.PNG
+   :alt: Main
 to see raw data
 ```shell script
 http://localhost:5000/raw_data
 ```
+.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Raw%20data.PNG
+   :align: left
+   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Raw%20data.PNG
+   :alt: Raw data
 to see input csv data
 ```shell script
 http://localhost:5000/input
 ```
+to see wranglered data
+```shell script
+http://localhost:5000/wranglered_input
+```
+.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Wranglered%20data.PNG
+   :align: left
+   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Wranglered%20data.PNG
+   :alt: Wramglered
 to see predicted results
 ```shell script
 http://localhost:5000/result
 ```
+.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Result%20page.PNG
+   :align: left
+   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Result%20page.PNG
+   :alt: Result
 to read about project
 ```shell script
 http://localhost:5000/about
 ```
+.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/About.PNG
+   :align: left
+   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/About.PNG
+   :alt: About
+   
+to read  first page
+```shell script
+http://localhost:5000/
+```
+.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/First_page.PNG
+   :align: left
+   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/First_page.PNG
+   :alt: First
