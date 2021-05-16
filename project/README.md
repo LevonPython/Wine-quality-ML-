@@ -23,58 +23,36 @@ Please provide link to confluence page or describe a project in few sentences.
               it basically runs the code written in `src` folder, all the scripts must be run from the project directory
 
 
-## Data 
+## Data , Features, Training, Prediction
 
 TODO: 
 
-Please describe technical steps for data gathering.
-Write samples for running scripts.
-For example: 
+Please run (via Jupyter) the following files by steps:
+- `1_EDA.ipynb` - Exploratory Data Analysis: understand the data by EDA and derive simple models with Pandas as baseline, Data wrangling: fill nan, convert categorical to numerical, create train and test data for ML algorithms
+- `2_Getting_best_dataframe.ipynb` - Pipline for data correcting, oversampling, wrangling, scaling
+- `3_Winequallity_Modelling.ipynb` - cross validation and Hyperparameters, </br>Comparison of Model results use metrics like confusion_matrix, classification_report, accuracy_score and implement k fold cross validation for comparison of test score
 
-```shell script
-python3 scripts/data.py make-dataset --arg-1 45 --arg-2 true ...
-```
-
-## Features 
-
-TODO: 
-
-Please describe technical steps for creating features.
-Write samples for running scripts.
-For example: 
-
-```shell script
-python3 scripts/data.py build-features --arg-1 45 --arg-2 true ...
-```
-
-## Training 
-
-
-Please describe technical steps for running training.
-Write samples for running scripts.
-For example: 
-
-```shell script
-python -m scripts.train --pipe-path "results\pipe.pkl"
-```
-
-## Prediction 
-
-TODO: 
-
-Please describe technical steps for making prediction.
-Write samples for running scripts.
-For example: 
-
-```shell script
-python3 scripts/score.py --arg-1 45 --arg-2 true ...
-```
+As a result of run of  these 3 Juiter files, it autimatically generates and saves the folowwing files for deployement's use:
+- `Dataframe_final.csv` - already developed data ready for modeling
+- `instance.json` - in this file are saved dataframe instance for simulating prediction during API server
+- `rand_forest_model.pkl` - in this file are saved Random Forest (best model for this dataset) model's object for further prediction use
 
 ## Tests / Deployement (Flask API)
 
-TODO: 
 
+
+Project development structure
+http://localhost:5000/</br>
+├── /main</br>
+│── /raw_data</br>
+├── /input</br>
+│── /wranglered_input</br>
+├── /result</br>
+│── /about</br>
+
+TODO: 
 Technical steps description for running API and implement tests.
+
 
 Step 1: Please run deployment/app.py file for raising local flask API (by default debug=True, host='127.0.0.1', port='5000').
 This API includes already saved (deployment/rand_forest_model.pkl) Best model's (Random Forest) object with necessary weights for prediction.
@@ -84,7 +62,7 @@ python deployment/app.py
 Step 2: Now please run the deployment/client.py to implement POST method to already raised API. 
 In this py file is implemented Argparse functionality to help user give necessary inputs (TEST input in JSON file extension)
 ```shell script
-python deployment/client.py instance.json
+python deployment/client.py data/instance_raw.json
 ```
 Step 3: You can see Web-server side on the local host (host='127.0.0.1', port='5000')
 to see main page
@@ -95,11 +73,11 @@ to see raw data
 ```shell script
 http://localhost:5000/raw_data
 ```
-to see input json data
+to see input csv data
 ```shell script
-http://localhost:5000/predict
+http://localhost:5000/input
 ```
-to see predicted data
+to see predicted results
 ```shell script
 http://localhost:5000/result
 ```
