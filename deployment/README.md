@@ -11,15 +11,11 @@ Please provide link to confluence page or describe a project in few sentences.
 - `data` - a folder with working files for API GET/POST functionality
 - `result` - a folder with generated result - Json. 
 - `templates` - a folder with API structure files - html, jpg
-    - `data` - a folder which contains code responsible for gathering raw data from data sources
-    - `features` - a folder which contains code responsible for creating features based on raw data
-    - `modeling` - a folder which contains code for running training and prediction
-    - `utils` - a folder which contains various utility code   
-    - `logger.py` - a logger
-    
-- `test` - a folder which contains unittests
-- `scripts` - a folder which contains scripts for data, training and prediction, 
-              it basically runs the code written in `src` folder, all the scripts must be run from the project directory
+- `app.py` - a main API file for creating API server (run 1st)
+- `client.py` - py file for creating POST request to API, reading, wrangling, saving raw data (run 2nd)
+- `data_wrangler.py` - py file for wrangling raw data (automatically works while client.py running)
+- `decision_tree.py` - py file for implementing Random Forest algorithm (automatically works while client.py running)
+
 
 
 ## Tests / Deployement (Flask API)
@@ -28,7 +24,7 @@ Please provide link to confluence page or describe a project in few sentences.
 
 Project development structure
 http://localhost:5000/</br>
-├── /main </br>
+├── /main</br>
 │── /raw_data</br>
 ├── /input</br>
 │── /wranglered_input</br>
