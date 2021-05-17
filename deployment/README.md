@@ -37,9 +37,11 @@ Technical steps description for running API and implement tests.
 
 Step 1: Please run deployment/app.py file for raising local flask API (by default debug=True, host='127.0.0.1', port='5000').</br>
 This API includes already saved (deployment/rand_forest_model.pkl) Best model's (Random Forest) object with necessary weights for prediction.</br>
+
 ```shell script
 python deployment/app.py
 ```
+
 </br>
 Step 2: Now please run the deployment/client.py to implement POST method to already raised API. </br>
 In this py file is implemented Argparse functionality to help user give necessary inputs (TEST input in JSON file extension)</br>
@@ -47,6 +49,7 @@ In this py file is implemented Argparse functionality to help user give necessar
 ```shell script
 python deployment/client.py data/instance_raw.json
 ```
+
 </br>
 Step 3: You can see Web-server side on the local host (host='127.0.0.1', port='5000')</br>
 to see main page </br>
@@ -57,31 +60,39 @@ http://localhost:5000/main</br>
 ![Main](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/main_page.PNG)
 
 to see raw data</br>
+
 ```shell script
 http://localhost:5000/raw_data
 ```
+
 </br>
 
 ![Raw data](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Raw%20data.PNG)
    
 to see input csv data</br>
+
 ```shell script
 http://localhost:5000/input
 ```
+
 </br>
 to see wranglered data</br>
+
 ```shell script
 http://localhost:5000/wranglered_input
 ```
+
 </br>
 
 
 ![Wramglered](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Wranglered%20data.PNG)
    
 to see predicted results</br>
+
 ```shell script
 http://localhost:5000/result
 ```
+
 </br>
 
 
@@ -89,18 +100,22 @@ http://localhost:5000/result
 
    
 to read about project</br>
+
 ```shell script
 http://localhost:5000/about
 ```
+
 </br>
 
 ![About](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/About.PNG)
   
    
 to read  first page</br>
+
 ```shell script
 http://localhost:5000/
 ```
+
 </br>
 
 ![First](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/First_page.PNG)
