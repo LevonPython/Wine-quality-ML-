@@ -55,7 +55,7 @@ Step 3: You can see Web-server side on the local host (host='127.0.0.1', port='5
 to see main page </br>
 
 ```shell script
-http://localhost:5000/main</br>
+http://localhost:5000/main
 ```
 
 ![Main](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/main_page.PNG)
