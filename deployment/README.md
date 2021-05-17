@@ -54,20 +54,15 @@ to see main page </br>
 http://localhost:5000/main</br>
 ```
 
-.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/main_page.PNG
-   :align: left
-   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/main_page.PNG
-   :alt: Main
-   
+![Main](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/main_page.PNG)
+
 to see raw data</br>
 ```shell script
 http://localhost:5000/raw_data
-```</br>
+```
+</br>
 
-.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Raw%20data.PNG
-   :align: left
-   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Raw%20data.PNG
-   :alt: Raw data
+![Raw data](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Raw%20data.PNG)
    
 to see input csv data</br>
 ```shell script
@@ -80,10 +75,8 @@ http://localhost:5000/wranglered_input
 ```
 </br>
 
-.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Wranglered%20data.PNG
-   :align: left
-   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Wranglered%20data.PNG
-   :alt: Wramglered
+
+![Wramglered](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Wranglered%20data.PNG)
    
 to see predicted results</br>
 ```shell script
@@ -91,10 +84,9 @@ http://localhost:5000/result
 ```
 </br>
 
-.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Result%20page.PNG
-   :align: left
-   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Result%20page.PNG
-   :alt: Result
+
+![Result](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Result%20page.PNG)
+
    
 to read about project</br>
 ```shell script
@@ -102,11 +94,8 @@ http://localhost:5000/about
 ```
 </br>
 
-.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/About.PNG
-   :align: left
-   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/About.PNG
-   :alt: About
-   
+![About](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/About.PNG)
+  
    
 to read  first page</br>
 ```shell script
@@ -114,8 +103,5 @@ http://localhost:5000/
 ```
 </br>
 
-.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/First_page.PNG
-   :align: left
-   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/First_page.PNG
-   :alt: First
+![First](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/First_page.PNG)
    
