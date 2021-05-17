@@ -16,7 +16,7 @@ Explain feature engineering Trying cross validation and Hyperparameters tuning w
 
 Our goals for this notebook:
 
-<b>Part 1: Exploratory Data Analysis </b>
+**Part 1: Exploratory Data Analysis **
 
 Exploratory Data Analysis: understand the data by EDA and derive simple models with Pandas as baseline
 
