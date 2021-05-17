@@ -1,13 +1,9 @@
-.. image:: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/wine_background.jpg
-   :align: left
-   :target: https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/wine_background.jpg
-   :alt: wine_background
+![wine_background](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/wine_background.jpg)
 
-============
-Wine-quality-ML-
-============
+# Wine-quality-ML-
 
-Predicting Wine Quality using Wine Quality Dataset
+
+## Predicting Wine Quality using Wine Quality Dataset
 
 It’s a well-established fact that age makes wine better – the older the wine, the better it will taste. However, age is not the only thing that determines a wine’s taste. Numerous factors determine the wine quality certification, including physicochemical tests such as alcohol quantity, fixed acidity, volatile acidity, density, and pH level, to name a few. In this ML project, we developed an ML model that can explore a wine’s chemical properties to predict its quality. The wine quality dataset we have used for this project consists of approximately 4898 observations, including 11 independent variables and one dependent variable. Mentioning Machine Learning projects for the final year can helped resume look much more interesting than others.
 
