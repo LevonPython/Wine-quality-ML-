@@ -2,23 +2,24 @@ import pandas as pd
 import numpy as np
 from flask import Flask, render_template
 from flask import request, jsonify
-import requests
 from sklearn import metrics
-import pickle
 import json
 from decision_tree import RandomForest
 from sklearn.preprocessing import StandardScaler
 # from ensemble_methods import RandomForest
+import socket
 
-app = Flask(__name__)
+
+app = Flask(__name__, template_folder='templates')
 
 global content
+
 
 def score(data: list):
     print("SCORE!")
     input_arr = data
     print(f"Json: {input_arr}")
-    model = RandomForest.load("md", "data/rand_forest_model.pkl")
+    model = RandomForest.load('', "data/rand_forest_model.pkl")
     print(f"Pickle: {model}")
 
     X = StandardScaler().fit_transform([list(i[:-1]) for i in input_arr])
@@ -47,7 +48,7 @@ def score(data: list):
     # predicted_np = np.array([i[0] for i in predict_list])
     # print(f"RF predicted: {predicted_np}")
     # calculate accuracy
-    accuracy = metrics.accuracy_score(np.array(y).reshape(-1,1), predicted_np)
+    accuracy = metrics.accuracy_score(np.array(y).reshape(-1, 1), predicted_np)
     print(f"accuracy: {accuracy}")
 
     with open('result/accuracy.json', 'w') as outfile:
@@ -69,57 +70,141 @@ def predict():
         return json.dumps({"prediction": prediction.tolist()})
     return jsonify(content)
 
+
 @app.route('/result', methods=['GET'])
 def result():
     with open('result/accuracy.json') as json_file:
         data = json.load(json_file)
-    return jsonify(data)
+    html_string = '''
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <link rel="stylesheet" type="text/css" href="df_style.css"/>
+      <body>
+      <a href="/main">Return to main page</a></br></br>
+      <h1>Results</h1><br/>
+        <h2>Accuracy: {accuracy}</br>
+        Prediction: </h2> {prediction}
+      </body>
+    </html>.
+    '''
+    # OUTPUT AN HTML FILE
+    with open('templates/results.html', 'w') as f:
+        f.write(html_string.format(accuracy=data['accuracy'], prediction=data['prediction']))
+    return render_template('results.html')
 
 
 @app.route('/raw_data', methods=['GET'])
 def data():
-    df = pd.read_csv("data\winequalityN.csv")
+    df = pd.read_csv(r"data\winequalityN.csv")
     table = df.head(20).to_html(classes="table table-striped")
-    """<h1>Raw Data</h1>"""
-    return table
+    print(table)
+
+    pd.set_option('colheader_justify', 'center')  # FOR TABLE <th>
+
+    html_string = '''
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <link rel="stylesheet" type="text/css" href="df_style.css"/>
+      <body>
+      <a href="/main">Return to main page</a></br></br>
+      <h1>Raw Data</h1><br/>
+        {table}
+      </body>
+    </html>.
+    '''
+
+    # OUTPUT AN HTML FILE
+    with open('templates/data.html', 'w') as f:
+        f.write(html_string.format(table=table))
+        print("WRITTEN")
+
+    return render_template("data.html")
+
 
 @app.route('/input', methods=['GET'])
 def input_data():
-    df = pd.read_csv("data\instance_raw.csv")
+    df = pd.read_csv(r"data\instance_raw.csv")
     table = df.head(20).to_html(classes="table table-striped")
-    """<h1>Input test data (csv format)</h1>"""
-    return table\
+    html_string = '''
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <link rel="stylesheet" type="text/css" href="df_style.css"/>
+      <body>
+      <a href="/main">Return to main page</a></br></br>
+      <h1>Input test data</h1><br/>
+        {table}
+      </body>
+    </html>.
+    '''
+    # OUTPUT AN HTML FILE
+    with open('templates/input.html', 'w') as f:
+        f.write(html_string.format(table=table))
+    return render_template('input.html')
 
-@app.route('/wranglered_input', methods=['GET'])
+
+@app.route('/wrangler_input', methods=['GET'])
 def input_wr_data():
-    df = pd.read_csv("data\instance_wranglered.csv")
+    df = pd.read_csv(r"data\instance_wrangler.csv")
     table = df.head(20).to_html(classes="table table-striped")
-    """<h1>Input test data (csv format)</h1>"""
-    return table
+
+    html_string = '''
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <link rel="stylesheet" type="text/css" href="df_style.css"/>
+      <body>
+      <a href="/main">Return to main page</a></br></br>
+      <h1>Input test data (wrangler)</h1><br/>
+        {table}
+      </body>
+    </html>.
+    '''
+    # OUTPUT AN HTML FILE
+    with open('templates/wrangler_input.html', 'w') as f:
+        f.write(html_string.format(table=table))
+    return render_template('wrangler_input.html')
 
 
 @app.route('/about', methods=['GET'])
 def about():
-    return render_template("main.html")
+    a_main = "ABOUT information"
+    return render_template("about.html", a_main=a_main)
+
 
 @app.route('/main', methods=['GET'])
 def main():
-    return """
-    <h1>Please choose any option below</h1></br>
-    <h3>
-    <a href="http://localhost:5000/">Return</a></br></br>
-    <a href="http://localhost:5000/raw_data">Raw data sample</a></br>
-    <a href="http://localhost:5000/input">Input test data (csv format)</a></br>
-    <a href="http://localhost:5000/wranglered_input">Input test <b>wranglered</b> data -  (csv format)</a></br>
-    <a href="http://localhost:5000/result">Result</a></br>
-    <a href="http://localhost:5000/about">About</a></br>
-    </h3>
-    """
+
+    return render_template('main.html', ipaddress=local_ip)
+
 
 @app.route('/', methods=['GET'])
 def first_page():
-    return render_template("first_page.html")
+    return render_template("first_page.html", ip_address=local_ip)
+
+
+@app.route('/reports', methods=['GET'])
+def reports():
+    # <img src="static/images/wine_background.png" alt="Wines' image" ></br>
+    html_string = '''
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <link rel="stylesheet" type="text/css" href="df_style.css"/>
+      <body>
+      <a href="/main">Return to main page</a></br></br>
+      
+      <h1>Reports</h1><br/>
+        {table}
+        <img src="static/images/wine_background.png" alt="Wines' image" ></br>
+      </body>
+    </html>.
+    '''
+    # OUTPUT AN HTML FILE
+    with open('templates/reports.html', 'w') as f:
+        f.write(html_string.format(table="Nothing"))
+    return render_template('reports.html')
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port='5000')
+    hostname = socket.gethostname()
+    local_ip = socket.gethostbyname(hostname)
+    print(f"Ip address: {local_ip}")
+    app.run(debug=True, host=local_ip, port='5000')

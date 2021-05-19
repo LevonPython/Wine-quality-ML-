@@ -5,6 +5,8 @@ import os.path
 import sys
 import pandas as pd
 from data_wrangler import DataWrangler
+import socket
+
 
 def json_parser(url):
 
@@ -48,7 +50,7 @@ def json_parser(url):
         df = DataWrangler.lst_of_dataframes(DataWrangler.oversampling_data(DataWrangler.data_correcting(df)))
         print("---Wranglered data------")
         print(df.head(20))
-        df.to_csv('data/instance_wranglered.csv')
+        df.to_csv('data/instance_wrangler.csv')
 
         # convert wranglered data to json format and POST to API
         json_file = json.loads(df.to_json(orient="split"))
@@ -56,6 +58,11 @@ def json_parser(url):
         r = requests.post(url, json=json_file)
         print(r.text)
 
+
 if __name__ == "__main__":
-    api_url = "http://localhost:5000/predict"
-    json_parser(api_url)
+    # api_url = "http://localhost:5000/predict"
+    hostname = socket.gethostname()
+    local_ip = socket.gethostbyname(hostname)
+    print(f"Ip address: {local_ip}")
+    api_url = f"http://{local_ip}:5000"
+    json_parser(local_ip)
