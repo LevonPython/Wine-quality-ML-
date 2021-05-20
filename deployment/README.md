@@ -59,7 +59,7 @@ to see main page </br>
 http://localhost:5000/main
 ```
 
-![Main](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/main_page.PNG)
+![Main](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Main.PNG)
 
 to see raw data</br>
 
@@ -69,7 +69,7 @@ http://localhost:5000/raw_data
 
 </br>
 
-![Raw data](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Raw%20data.PNG)
+![Raw data](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Raw_data.PNG)
    
 to see input csv data</br>
 
@@ -87,7 +87,7 @@ http://localhost:5000/wranglered_input
 </br>
 
 
-![Wramglered](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Wranglered%20data.PNG)
+![Wramglered](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/test_data_wranglered.PNG)
    
 to see predicted results</br>
 
@@ -98,7 +98,7 @@ http://localhost:5000/result
 </br>
 
 
-![Result](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Result%20page.PNG)
+![Result](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/result.PNG)
 
    
 to read about project</br>
@@ -109,10 +109,10 @@ http://localhost:5000/about
 
 </br>
 
-![About](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/About.PNG)
+![About](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/About.PNG)
   
    
-to read  first page</br>
+to read  home page</br>
 
 ```shell script
 http://localhost:5000/
@@ -120,5 +120,5 @@ http://localhost:5000/
 
 </br>
 
-![First](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/First_page.PNG)
+![Home](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Home.PNG)
    
