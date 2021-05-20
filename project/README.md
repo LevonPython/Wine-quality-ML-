@@ -1,3 +1,4 @@
+![wine_background](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/static/images/grapes_and_wines.jpg)
 # Project structure
 Project: Predicting Wine Quality using Wine Quality Dataset.
 
