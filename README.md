@@ -1,4 +1,4 @@
-![wine_background](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/wine_background.jpg)
+![wine_background](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/static/images/wine_background.png)
 
 # Wine-quality-ML-
 
