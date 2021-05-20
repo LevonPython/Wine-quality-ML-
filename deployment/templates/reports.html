@@ -1,13 +1,74 @@
-
     <html>
       <head><title>HTML Pandas Dataframe with CSS</title></head>
       <link rel="stylesheet" type="text/css" href="df_style.css"/>
-<body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
+    <body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
      height: 300px; background-size: cover;">
         <h3><a href="/main">Return to main page</a></h3></br>
-      
-      <h1>Reports</h1><br/>
-        Nothing        
+
+      <h3><a href="#bottom">Bottom</a></br>
+      <a href="#Outliers">1. Outliers</a></br>
+      <a href="#Correlation">2. Correlation between each feature and quality</a></br>
+      <a href="#heatmap1">3.1 The correlation matrix correlation between different features</a></br>
+      <a href="#heatmap2">3.2 The correlation matrix correlation between different features</a></br>
+      <a href="#rel4.1">4.1 The relation between chlorides, density, free sulfur dioxide and quality</a></br>
+      <a href="#rel4.2">4.2 The relation between pH, sulphates and quality</a></br>
+      <a href="#rel4.3">4.3 The relation between citric acid, fixed acidity, residual sugar and quality </a></br>
+      <a href="#rel4.4">4.4 The relation between volatile acidity, alcohol, total sulfur dioxide and quality</a></br>
+      <a href="#rel5.1">5.1 The realtion between citric acid, alcohol, pH vs fixed_acidity</a></br>
+      </h3>
+
+      <h1 align="center"; style="color: blue" >DATA VISUALIZATION</h1><br/>
+
+
+      <h2 id='Outliers'; align="center"; style="color: blue">1. Outliers</h2>
+    <center><img src="static/reports/Outliers.png" alt="Outliers" ></center></br>
+
+     <h2 id='Correlation'; align="center"; style="color: blue">2. Correlation between each feature and quality</h2>
+    <center><img src="static/reports/correlation1.png" alt="correlation" ></center></br>
+
+         <h2 id='heatmap1'; align="center"; style="color: blue">3.1 The correlation matrix correlation between different features</h2>
+    <center><img src="static/reports/heatmap1.png" alt="heatmap1" ></center></br>
+
+    <h2 id='heatmap2'; align="center"; style="color: blue">3.2 The correlation matrix correlation between different features</h2>
+    <center><img src="static/reports/heatmap2.png" alt="heatmap2" ></center></br>
+    <h2><a href="#top">Top</a></h2>
+
+    <h2 id='rel4.1'; align="center"; style="color: blue">4.1 The relation between chlorides, density, free sulfur dioxide and quality </h2>
+
+    <img src="static/reports/rel1.png" alt="rel1" >
+    <img  src="static/reports/rel2.png" alt="rel1" >
+    <img  src="static/reports/rel3.png" alt="rel1" >
+    <p>The quality of wine increases as chlorides go down</p>
+
+        <h2 id='rel4.2'; align="center"; style="color: blue">4.2 The relation between pH, sulphates and quality</h2>
+
+    <img src="static/reports/rel4.png" alt="rel2" >
+    <img  src="static/reports/rel5.png" alt="rel2" >
+    <img  src="static/reports/rel6.png" alt="rel2" >
+    <p>The relationship with sulphates is strange, it increases as wine's quality gets higher (from 3 to 7), however, in case if quality values 8,9 it's lower
+     You can see differences between the correlations of red and white wines, probably it makes sense separating them for modeling</p>
+
+    <h2 id='rel4.3'; align="center"; style="color: blue">4.3 The relation between citric acid, fixed acidity, residual sugar and quality  </h2>
+    <img src="static/reports/rel7.png" alt="rel3" >
+    <img  src="static/reports/rel8.png" alt="rel3" >
+    <img  src="static/reports/rel9.png" alt="rel3" >
+    <p>There is no clear correelation trend between fixed acidity and quality, quality and residual sugar.</p>
+
+        <h2 id='rel4.4'; align="center"; style="color: blue">4.4 The relation between volatile acidity, alcohol, total sulfur dioxide and quality</h2>
+    <img src="static/reports/rel10.png" alt="rel4" >
+    <img  src="static/reports/rel11.png" alt="rel4" >
+    <img  src="static/reports/rel12.png" alt="rel4" >
+    <p>You can see that the higher gets the quality the lower becomes volatile acidity, so there is a negative correlation between these variables.
+     </p>
+    </br>
+
+    <h2 id='rel5.1'; align="center"; style="color: blue">5.1 The realtion between citric acid, alcohol, pH vs fixed_acidity</h2>
+        <img align="left"; width="580px"; height="550px"; src="static/reports/rel21.png" alt="rel5" >
+    <img align="middle"; width="721px"; height="550px"; src="static/reports/rel23.png" alt="rel5">
+    <img  align="right"; width="580px"; height="550px"; src="static/reports/rel22.png" alt="rel5" ></br>
+    <p>In case of citric acidity we can see the opposity: it is positively correlated with the quality</p>
+    </br>
+
+    <h2><a href="#top">Top</a></h2>
       </body>
     </html>.
-    

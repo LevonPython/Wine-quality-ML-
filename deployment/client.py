@@ -64,5 +64,5 @@ if __name__ == "__main__":
     hostname = socket.gethostname()
     local_ip = socket.gethostbyname(hostname)
     print(f"Ip address: {local_ip}")
-    api_url = f"http://{local_ip}:5000"
-    json_parser(local_ip)
+    api_url = f"http://{local_ip}:5000/predict"
+    json_parser(api_url)

@@ -185,25 +185,8 @@ def home():
     return render_template("home.html", ip_address=local_ip)
 
 
-@app.route('/reports', methods=['GET'])
+@app.route('/data_visualizing', methods=['GET'])
 def reports():
-    # <img src="static/images/wine_background.png" alt="Wines' image" ></br>
-    html_string = '''
-    <html>
-      <head><title>HTML Pandas Dataframe with CSS</title></head>
-      <link rel="stylesheet" type="text/css" href="df_style.css"/>
-<body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
-     height: 300px; background-size: cover;">
-        <h3><a href="/main">Return to main page</a></h3></br>
-      
-      <h1>Reports</h1><br/>
-        {table}        
-      </body>
-    </html>.
-    '''
-    # OUTPUT AN HTML FILE
-    with open('templates/reports.html', 'w') as f:
-        f.write(html_string.format(table="Nothing"))
     return render_template('reports.html')
 
 
