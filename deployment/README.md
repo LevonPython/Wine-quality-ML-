@@ -84,6 +84,7 @@ to see wranglered data</br>
 http://localhost:5000/wranglered_input
 ```
 
+![Raw data](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/test_data.PNG)
 </br>
 
 
@@ -120,5 +121,20 @@ http://localhost:5000/
 
 </br>
 
-![Home](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Home.PNG)
+![About](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Home.PNG)
+   
+   
+  to see Data Visualization page</br>
+
+```shell script
+http://localhost:5000/data_visualizing
+```
+
+</br>
+
+![DV1](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Data_visualization1.PNG)
+![DV2](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Data_visualization2.PNG)
+![DV3](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Data_visualization3.PNG)
+![DV4](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Data_visualization4.PNG)
+![DV5](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Data_visualization5.PNG)
    
