@@ -79,8 +79,9 @@ def result():
     <html>
       <head><title>HTML Pandas Dataframe with CSS</title></head>
       <link rel="stylesheet" type="text/css" href="df_style.css"/>
-      <body>
-      <a href="/main">Return to main page</a></br></br>
+<body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
+     height: 300px; background-size: cover;">
+        <h3><a href="/main">Return to main page</a></h3></br>
       <h1>Results</h1><br/>
         <h2>Accuracy: {accuracy}</br>
         Prediction: </h2> {prediction}
@@ -105,8 +106,9 @@ def data():
     <html>
       <head><title>HTML Pandas Dataframe with CSS</title></head>
       <link rel="stylesheet" type="text/css" href="df_style.css"/>
-      <body>
-      <a href="/main">Return to main page</a></br></br>
+<body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
+     height: 300px; background-size: cover;">
+    <h3><a href="/main">Return to main page</a></h3></br>
       <h1>Raw Data</h1><br/>
         {table}
       </body>
@@ -129,8 +131,9 @@ def input_data():
     <html>
       <head><title>HTML Pandas Dataframe with CSS</title></head>
       <link rel="stylesheet" type="text/css" href="df_style.css"/>
-      <body>
-      <a href="/main">Return to main page</a></br></br>
+<body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
+     height: 300px; background-size: cover;">
+    <h3><a href="/main">Return to main page</a></h3></br>
       <h1>Input test data</h1><br/>
         {table}
       </body>
@@ -151,8 +154,9 @@ def input_wr_data():
     <html>
       <head><title>HTML Pandas Dataframe with CSS</title></head>
       <link rel="stylesheet" type="text/css" href="df_style.css"/>
-      <body>
-      <a href="/main">Return to main page</a></br></br>
+<body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
+     height: 300px; background-size: cover;">
+        <h3><a href="/main">Return to main page</a></h3></br>
       <h1>Input test data (wrangler)</h1><br/>
         {table}
       </body>
@@ -177,8 +181,8 @@ def main():
 
 
 @app.route('/', methods=['GET'])
-def first_page():
-    return render_template("first_page.html", ip_address=local_ip)
+def home():
+    return render_template("home.html", ip_address=local_ip)
 
 
 @app.route('/reports', methods=['GET'])
@@ -188,12 +192,12 @@ def reports():
     <html>
       <head><title>HTML Pandas Dataframe with CSS</title></head>
       <link rel="stylesheet" type="text/css" href="df_style.css"/>
-      <body>
-      <a href="/main">Return to main page</a></br></br>
+<body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
+     height: 300px; background-size: cover;">
+        <h3><a href="/main">Return to main page</a></h3></br>
       
       <h1>Reports</h1><br/>
-        {table}
-        <img src="static/images/wine_background.png" alt="Wines' image" ></br>
+        {table}        
       </body>
     </html>.
     '''
