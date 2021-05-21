@@ -1,23 +1,35 @@
     <html>
-      <head><title>HTML Pandas Dataframe with CSS</title></head>
-      <link rel="stylesheet" type="text/css" href="df_style.css"/>
+      <head>
+          <title>HTML Pandas Dataframe with CSS</title>
+            <link rel="stylesheet" type="text/css" href="df_style.css"/>
+            <style>
+            a{
+            text-decoration: none;
+            }
+                a:visited{
+                color:white;
+                }
+            </style>
+      </head>
     <body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
      height: 300px; background-size: cover;">
-        <h3><a href="/main">Return to main page</a></h3></br>
+        <h3><a href="/main" style="color: #80030d"}>Return to main page</a></h3></br>
 
-      <h3><a href="#bottom">Bottom</a></br>
-      <a href="#Outliers">1. Outliers</a></br>
-      <a href="#Correlation">2. Correlation between each feature and quality</a></br>
-      <a href="#heatmap1">3.1 The correlation matrix correlation between different features</a></br>
-      <a href="#heatmap2">3.2 The correlation matrix correlation between different features</a></br>
-      <a href="#rel4.1">4.1 The relation between chlorides, density, free sulfur dioxide and quality</a></br>
-      <a href="#rel4.2">4.2 The relation between pH, sulphates and quality</a></br>
-      <a href="#rel4.3">4.3 The relation between citric acid, fixed acidity, residual sugar and quality </a></br>
-      <a href="#rel4.4">4.4 The relation between volatile acidity, alcohol, total sulfur dioxide and quality</a></br>
-      <a href="#rel5.1">5.1 The realtion between citric acid, alcohol, pH vs fixed_acidity</a></br>
+
+          <h1 align="center" style="color: blue" >DATA VISUALIZATION</h1>
+         <h3 align="left" style="color:white;">
+      <a href="#Outliers">1. Outliers</a></br></br>
+      <a href="#Correlation">2. Correlation between each feature and quality</a></br></br>
+      <a href="#heatmap1">3.1 The correlation matrix correlation between different features</a></br></br>
+      <a href="#heatmap2">3.2 The correlation matrix correlation between different features</a></br></br>
+      <a href="#rel4.1">4.1 The relation between chlorides, density, free sulfur dioxide and quality</a></br></br>
+      <a href="#rel4.2">4.2 The relation between pH, sulphates and quality</a></br></br>
+      <a href="#rel4.3">4.3 The relation between citric acid, fixed acidity, residual sugar and quality </a></br></br>
+      <a href="#rel4.4">4.4 The relation between volatile acidity, alcohol, total sulfur dioxide and quality</a></br></br>
+      <a href="#rel5.1">5.1 The realtion between citric acid, alcohol, pH vs fixed_acidity</a></br></br>
       </h3>
 
-      <h1 align="center"; style="color: blue" >DATA VISUALIZATION</h1><br/>
+
 
 
       <h2 id='Outliers'; align="center"; style="color: blue">1. Outliers</h2>
@@ -31,7 +43,7 @@
 
     <h2 id='heatmap2'; align="center"; style="color: blue">3.2 The correlation matrix correlation between different features</h2>
     <center><img src="static/reports/heatmap2.png" alt="heatmap2" ></center></br>
-    <h2><a href="#top">Top</a></h2>
+    <h2><a href="#top" style="color:blue;">Top</a></h2>
 
     <h2 id='rel4.1'; align="center"; style="color: blue">4.1 The relation between chlorides, density, free sulfur dioxide and quality </h2>
 
@@ -69,6 +81,6 @@
     <p>In case of citric acidity we can see the opposity: it is positively correlated with the quality</p>
     </br>
 
-    <h2><a href="#top">Top</a></h2>
+    <h2><a href="#top" style="color:blue;">Top</a></h2>
       </body>
     </html>.

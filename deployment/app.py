@@ -82,7 +82,7 @@ def result():
 <body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
      height: 300px; background-size: cover;">
         <h3><a href="/main">Return to main page</a></h3></br>
-      <h1>Results</h1><br/>
+      <h1 style="color: blue">Results</h1><br/>
         <h2>Accuracy: {accuracy}</br>
         Prediction: </h2> {prediction}
       </body>
@@ -109,7 +109,7 @@ def data():
 <body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
      height: 300px; background-size: cover;">
     <h3><a href="/main">Return to main page</a></h3></br>
-      <h1>Raw Data</h1><br/>
+      <h1 style="color: blue">Raw Data</h1><br/>
         {table}
       </body>
     </html>.
@@ -134,7 +134,7 @@ def input_data():
 <body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
      height: 300px; background-size: cover;">
     <h3><a href="/main">Return to main page</a></h3></br>
-      <h1>Input test data</h1><br/>
+      <h1 style="color: blue">Input test data</h1><br/>
         {table}
       </body>
     </html>.
@@ -157,7 +157,7 @@ def input_wr_data():
 <body style="background: url('static/images/grapes_and_wines.jpg');   background-size: 100% 100%;
      height: 300px; background-size: cover;">
         <h3><a href="/main">Return to main page</a></h3></br>
-      <h1>Input test data (wrangler)</h1><br/>
+      <h1 style="color: blue">Input test data (wrangler)</h1><br/>
         {table}
       </body>
     </html>.
