@@ -24,7 +24,7 @@ Please provide link to confluence page or describe a project in few sentences.
 
 
 Project development structure
-http://localhost:5000/</br>
+http://local_ip_address:5000/</br> where local_ip is for example 192.168.0.134</br>
 ├── /main </br>
 │── /raw_data </br>
 ├── /input </br>
@@ -36,7 +36,7 @@ TODO:
 Technical steps description for running API and implement tests.
 
 
-Step 1: Please run deployment/app.py file for raising local flask API (by default debug=True, host='127.0.0.1', port='5000').</br>
+Step 1: Please run deployment/app.py file for raising local flask API (by default debug=True, host=local ip address, port='5000').</br>
 This API includes already saved (deployment/rand_forest_model.pkl) Best model's (Random Forest) object with necessary weights for prediction.</br>
 
 ```shell script
@@ -52,73 +52,89 @@ python deployment/client.py data/instance_raw.json
 ```
 
 </br>
-Step 3: You can see Web-server side on the local host (host='127.0.0.1', port='5000')</br>
+Step 3: You can see Web-server side on the local ip address (host=local ip address, port='5000')</br>
 to see main page </br>
 
 ```shell script
-http://localhost:5000/main
+http://local_ip_address:5000/main
 ```
 
-![Main](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/main_page.PNG)
+![Main](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Main.PNG)
 
 to see raw data</br>
 
 ```shell script
-http://localhost:5000/raw_data
+http://local_ip_address:5000/raw_data
 ```
 
 </br>
 
-![Raw data](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Raw%20data.PNG)
+![Raw data](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Raw_data.PNG)
    
 to see input csv data</br>
 
 ```shell script
-http://localhost:5000/input
+http://local_ip_address:5000/input
 ```
 
 </br>
 to see wranglered data</br>
 
 ```shell script
-http://localhost:5000/wranglered_input
+http://local_ip_address:5000/wranglered_input
 ```
 
+![Raw data](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/test_data.PNG)
 </br>
 
 
-![Wramglered](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Wranglered%20data.PNG)
+![Wramglered](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/test_data_wranglered.PNG)
    
 to see predicted results</br>
 
 ```shell script
-http://localhost:5000/result
+http://local_ip_address:5000/result
 ```
 
 </br>
 
 
-![Result](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/Result%20page.PNG)
+![Result](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/result.PNG)
 
    
 to read about project</br>
 
 ```shell script
-http://localhost:5000/about
+http://local_ip_address:5000/about
 ```
 
 </br>
 
-![About](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/About.PNG)
+![About](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/About.PNG)
   
    
-to read  first page</br>
+to read  home page</br>
 
 ```shell script
-http://localhost:5000/
+http://local_ip_address:5000/
 ```
 
 </br>
 
-![First](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/First_page.PNG)
+![About](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Home.PNG)
+   
+   
+  to see Data Visualization page</br>
+
+```shell script
+http://local_ip_address:5000/data_visualizing
+```
+
+</br>
+
+![DV1](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Data_visualization1.PNG)
+![DV2](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Data_visualization2.PNG)
+![DV3](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Data_visualization3.PNG)
+![DV4](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Data_visualization4.PNG)
+![DV5](https://github.com/LevonPython/Wine-quality-ML-/blob/main/deployment/templates/template%20snippets/Data_visualization5.PNG)
    
