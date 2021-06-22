@@ -24,7 +24,7 @@ opencv-python==4.5.1.48
 openpyxl==3.0.6
 packaging==20.9
 pandas==1.2.4
-Pillow==8.1.2
+Pillow==8.2.0
 pipwin==0.5.1
 PyAudio @ file:///C:/Users/levon_y/Desktop/Acra%20requests/Acra/Piano/piano/PyAudio-0.2.11-cp38-cp38-win_amd64.whl
 PyAutoGUI==0.9.52
