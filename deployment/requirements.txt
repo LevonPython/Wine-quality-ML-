@@ -47,11 +47,9 @@ tzlocal==2.1
 urllib3==1.26.5
 Werkzeug==1.0.1
 xlrd==1.2.0
-=======
 scikit-learn==0.23.2
 scipy==1.6.3
 six==1.16.0
 threadpoolctl==2.1.0
 urllib3==1.26.5
 Werkzeug==2.0.0
->>>>>>> 16c07147e76e440eb02328ed9b67b19a8e526ff4
