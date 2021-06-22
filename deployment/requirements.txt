@@ -39,7 +39,6 @@ PyTweening==1.0.3
 pytz==2021.1
 pywin32==300
 requests==2.25.1
-<<<<<<< HEAD
 six==1.15.0
 soupsieve==2.2.1
 tzlocal==2.1
